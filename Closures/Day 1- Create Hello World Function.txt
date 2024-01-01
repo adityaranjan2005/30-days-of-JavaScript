@@ -1,0 +1,16 @@
+Problem:
+Write a function createHelloWorld. It should return a new function that always returns "Hello World".
+
+Approach Steps:
+1> createHelloWorld is a function assigned to a variable.
+2> It returns another function.
+3> The returned function uses the rest parameter ...args to accept any number of arguments.
+4> Regardless of the arguments received, it always returns the string "Hello World".
+
+Solution:
+
+var createHelloWorld = function() {
+    return function(...args) {
+        return "Hello World"
+    }
+};
